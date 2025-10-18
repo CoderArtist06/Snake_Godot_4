@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhmpi3xa8gdll"]
+
+[sub_resource type="TileSet" id="TileSet_gtl01"]
+tile_size = Vector2i(20, 20)
+
+[node name="Level" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_gtl01")
+format = 2
