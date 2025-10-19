@@ -1,0 +1,132 @@
+[gd_scene load_steps=15 format=3 uid="uid://nblio35cirj1"]
+
+[ext_resource type="FontFile" uid="uid://c8axsum7ep2c2" path="res://Assets/Font/Tiny5-Regular.ttf" id="1_p8rbg"]
+[ext_resource type="Script" uid="uid://b4mi178tngq10" path="res://Scenes/Main/Main.gd" id="1_qtv3y"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p8rbg"]
+bg_color = Color(0.27450982, 0.27450982, 0.27450982, 0.43137255)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qtv3y"]
+font = ExtResource("1_p8rbg")
+font_size = 112
+
+[sub_resource type="LabelSettings" id="LabelSettings_cmk6n"]
+font = ExtResource("1_p8rbg")
+font_size = 24
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p8rbg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qtv3y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cmk6n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i3fi7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o8wgc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w20t6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aw1lf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5s61s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7npjy"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qtv3y")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_p8rbg")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -147.0
+offset_top = -162.0
+offset_right = 147.0
+offset_bottom = -36.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Snake"
+label_settings = SubResource("LabelSettings_qtv3y")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BestScoreLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -88.5
+offset_top = -18.0
+offset_right = 88.5
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "best score: 000"
+label_settings = SubResource("LabelSettings_cmk6n")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -169.0
+offset_right = 160.0
+grow_vertical = 0
+theme_override_constants/separation = 12
+
+[node name="Spacer" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Play" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_p8rbg")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_p8rbg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_qtv3y")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cmk6n")
+text = "Start"
+
+[node name="Credit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_p8rbg")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i3fi7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o8wgc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_w20t6")
+text = "Extra"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_p8rbg")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_aw1lf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5s61s")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7npjy")
+text = "Exit"
+
+[node name="Spacer2" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2

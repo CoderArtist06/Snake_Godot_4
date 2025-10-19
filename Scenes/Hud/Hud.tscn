@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=3 uid="uid://cjbk3a4rtxwpw"]
+
+[ext_resource type="Script" uid="uid://cxb5bsh70gd2n" path="res://Scenes/Hud/Hud.gd" id="1_iteex"]
+[ext_resource type="FontFile" uid="uid://c8axsum7ep2c2" path="res://Assets/Font/Tiny5-Regular.ttf" id="1_vvs1i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_iteex"]
+font = ExtResource("1_vvs1i")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vvs1i"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Hud" type="CanvasLayer"]
+script = ExtResource("1_iteex")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.031000001
+anchor_top = 0.008
+anchor_right = 0.256
+anchor_bottom = 0.083000004
+offset_left = 0.15999985
+offset_top = 0.15999985
+offset_right = 0.1599884
+offset_bottom = 0.15999603
+text = "Score: 000"
+label_settings = SubResource("LabelSettings_iteex")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Border" type="Panel" parent="."]
+anchors_preset = -1
+anchor_top = 0.083000004
+anchor_right = 1.0
+anchor_bottom = 0.083000004
+offset_top = 0.15999603
+offset_bottom = 10.159996
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vvs1i")
+
+[node name="Border2" type="Panel" parent="."]
+anchors_preset = -1
+anchor_top = 0.083000004
+anchor_bottom = 1.0
+offset_top = 0.15999603
+offset_right = 10.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vvs1i")
+
+[node name="Border3" type="Panel" parent="."]
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.083000004
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -10.0
+offset_top = 0.15999603
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vvs1i")
+
+[node name="Border4" type="Panel" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_vvs1i")

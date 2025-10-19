@@ -1,0 +1,84 @@
+[gd_scene load_steps=8 format=3 uid="uid://dk04apqmt1i5"]
+
+[ext_resource type="FontFile" uid="uid://c8axsum7ep2c2" path="res://Assets/Font/Tiny5-Regular.ttf" id="1_qwnta"]
+[ext_resource type="Script" uid="uid://dvgprdto8r1wn" path="res://Scenes/GameOver/GameOver.gd" id="1_ybu6n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ybu6n"]
+bg_color = Color(1.504086e-07, 0.15544379, 0.20312834, 1)
+shadow_size = 3
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jfln8"]
+font = ExtResource("1_qwnta")
+font_size = 48
+shadow_size = 9
+shadow_color = Color(0, 0, 0, 0.39215687)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2hei"]
+bg_color = Color(0.18000486, 0.1800049, 0.18000478, 1)
+shadow_size = 1
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ow8it"]
+shadow_size = 1
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n20py"]
+bg_color = Color(0.23392546, 0.23392549, 0.23392531, 1)
+shadow_size = 1
+shadow_offset = Vector2(2, 2)
+
+[node name="GameOver" type="CanvasLayer"]
+script = ExtResource("1_ybu6n")
+
+[node name="GameOverPanel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -125.0
+offset_right = 200.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ybu6n")
+
+[node name="ResultLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -132.0
+offset_top = -78.0
+offset_right = 132.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "GAME OVER!"
+label_settings = SubResource("LabelSettings_jfln8")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RestartButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -69.0
+offset_top = 15.0
+offset_right = 69.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_qwnta")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_h2hei")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ow8it")
+theme_override_styles/hover = SubResource("StyleBoxFlat_n20py")
+text = "Restart"
+
+[connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]

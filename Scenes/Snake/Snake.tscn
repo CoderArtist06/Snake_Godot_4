@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bokbqt1jandtf"]
+
+[ext_resource type="Texture2D" uid="uid://rivpii0icy7d" path="res://Assets/Sprites/snake_20_20.png" id="1_tpa0l"]
+
+[node name="Snake" type="Sprite2D" groups=["segments_snake"]]
+texture = ExtResource("1_tpa0l")
