@@ -17,13 +17,12 @@ script = ExtResource("1_iteex")
 [node name="Label" type="Label" parent="."]
 anchors_preset = -1
 anchor_left = 0.031000001
-anchor_top = 0.008
 anchor_right = 0.256
-anchor_bottom = 0.083000004
+anchor_bottom = 0.075
 offset_left = 0.15999985
-offset_top = 0.15999985
+offset_top = 4.0
 offset_right = 0.1599884
-offset_bottom = 0.15999603
+offset_bottom = 4.0
 text = "Score: 000"
 label_settings = SubResource("LabelSettings_iteex")
 horizontal_alignment = 1

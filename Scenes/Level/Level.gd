@@ -53,11 +53,11 @@ func _ready() -> void:
 
 # Draw the game grid
 # Debug only use
-func _draw() -> void:
-	for y in range(vertical_cell):
-		for x in range(horizontal_cell):
-			var pos = Vector2(x, y) * cell_size + Vector2(0, cell_size)
-			draw_rect(Rect2(pos, Vector2(cell_size, cell_size)), Color(0.5, 0.5, 0.5), false)
+#func _draw() -> void:
+#	for y in range(vertical_cell):
+#		for x in range(horizontal_cell):
+#			var pos = Vector2(x, y) * cell_size + Vector2(0, cell_size)
+#			draw_rect(Rect2(pos, Vector2(cell_size, cell_size)), Color(0.5, 0.5, 0.5), false)
 
 
 func new_game() -> void:
