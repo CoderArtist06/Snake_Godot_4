@@ -1,4 +1,14 @@
-[gd_scene format=3 uid="uid://1pw41y5u73ye"]
+[gd_scene load_steps=5 format=3 uid="uid://1pw41y5u73ye"]
+
+[ext_resource type="Script" uid="uid://bwnp7elrsuwd7" path="res://Scenes/Credit/Credit.gd" id="1_xpsme"]
+[ext_resource type="FontFile" uid="uid://c8axsum7ep2c2" path="res://Assets/Font/Tiny5-Regular.ttf" id="2_vw2v5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_da6im"]
+bg_color = Color(0.27450982, 0.27450982, 0.27450982, 0.43137255)
+
+[sub_resource type="LabelSettings" id="LabelSettings_v6fxf"]
+font = ExtResource("2_vw2v5")
+font_size = 24
 
 [node name="Credit" type="Control"]
 layout_mode = 3
@@ -7,3 +17,27 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_xpsme")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_da6im")
+
+[node name="CreditLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "propro"
+label_settings = SubResource("LabelSettings_v6fxf")
+horizontal_alignment = 1
+vertical_alignment = 1
