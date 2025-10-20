@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Snake"
-run/main_scene="uid://dhmpi3xa8gdll"
+run/main_scene="uid://nblio35cirj1"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 

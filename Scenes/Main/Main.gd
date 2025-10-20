@@ -9,12 +9,12 @@ func _ready() -> void:
 
 
 func _on_play_pressed() -> void:
-	pass # Replace with function body.
+	GameManager.set_mode("start")
 
 
 func _on_credit_pressed() -> void:
-	pass # Replace with function body.
+	GameManager.set_mode("credit")
 
 
 func _on_exit_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().quit()

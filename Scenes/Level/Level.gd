@@ -60,6 +60,11 @@ func _ready() -> void:
 #			draw_rect(Rect2(pos, Vector2(cell_size, cell_size)), Color(0.5, 0.5, 0.5), false)
 
 
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("Exit") == true:
+		GameManager.set_mode("menu")
+
+
 func new_game() -> void:
 	get_tree().paused = false
 	get_tree().call_group("segments_snake", "queue_free")
