@@ -13,8 +13,6 @@ For gameplay details and controls, check out the [itch.io page](https://coderart
 
 ---
 
----
-
 ## Clone the repository
 ```bash
 git clone https://github.com/CoderArtist06/Snake_Godot_4.git
