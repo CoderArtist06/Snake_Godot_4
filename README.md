@@ -45,7 +45,7 @@ That’s it, you’re ready to explore or modify the game!
 ## Credits
 
 - **Developer/Artist:** Valentin Cristian Ghita (aka CoderArtist06)
-- **Font:**The Tiny5 Project, Gissio, Licensed under SIL Open Font License 1.1
+- **Font:** The Tiny5 Project, Gissio, Licensed under SIL Open Font License 1.1
 - **Engine:** [Godot Engine](https://godotengine.org)  
 - **License:** [GPL-3.0](LICENSE)
 
