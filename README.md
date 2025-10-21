@@ -13,6 +13,15 @@ For gameplay details and controls, check out the [itch.io page](https://coderart
 
 ---
 
+---
+
+## Clone the repository
+```bash
+git clone https://github.com/CoderArtist06/Snake_Godot_4.git
+```
+
+---
+
 ## How to Open the Project
 
 If you’ve cloned or downloaded this repository and can’t open it directly in Godot, make sure to:
@@ -26,7 +35,7 @@ That’s it, you’re ready to explore or modify the game!
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 - **Engine:** Godot 4.5  
 - **Language:** GDScript  
@@ -35,15 +44,16 @@ That’s it, you’re ready to explore or modify the game!
 
 ---
 
-## 🤝 Credits
+## Credits
 
-- **Developer:** [Valentin Cristian Ghita (aka CoderArtist06)]  
+- **Developer/Artist:** [Valentin Cristian Ghita (aka CoderArtist06)]
+- **Font:**[The Tiny5 Project, Gissio, Licensed under SIL Open Font License 1.1]
 - **Engine:** [Godot Engine](https://godotengine.org)  
 - **License:** [GPL-3.0](LICENSE)
 
 ---
 
-## 🪐 License
+## License
 
 This project is licensed under the **GNU General Public License v3.0**.  
 You’re free to use, modify, and redistribute this code, as long as you respect the same license terms.
