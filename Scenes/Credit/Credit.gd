@@ -43,28 +43,17 @@ func _ready():
 	SIL Open Font License, Version 1.1
 	
 	
-	SFX
-	
-	(empty)
-	
-	
-	Music
-	
-	(empty)
-	
-	
 	
 	
 	Special Thanks
-	
-	A special thanks to "Snake", 
-	the game that defined my childhood. 
-	I spent countless hours playing it on 
-	my mom’s iconic Nokia 3310, chasing pixels 
-	and breaking my own records. 
-	It was my very first encounter with video games, 
-	and it left me with one of the most 
-	cherished memories I have from that time.
+	 
+	This game defined my childhood. 
+	I spent countless hours playing it 
+	on my mother's legendary Nokia 3310, 
+	chasing pixels and breaking my own records. 
+	It was my very first encounter with video games 
+	and left me with one of the most 
+	precious memories I have from that time.
 	
 	
 	
