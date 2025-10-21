@@ -1,6 +1,6 @@
 # Snake
 
-A modern take on the classic **Snake** game from old-school Nokia devices — simple to play, hard to master, and built with ❤️ in **Godot 4.5**.
+A modern take on the classic **Snake** game from old-school Nokia devices, simple to play, hard to master, and built with ❤️ in **Godot 4.5**.
 
 ---
 
@@ -9,7 +9,7 @@ A modern take on the classic **Snake** game from old-school Nokia devices — si
 This project reimagines the timeless Snake experience with smooth movement, modular architecture, and full controller support.  
 It’s designed for learning, tinkering, and expanding, perfect for anyone exploring Godot game development.
 
-For gameplay details and controls, check out the [itch.io page](https://coderartist06.itch.io/snake).
+For details on gameplay and controls, check out [itch.io page](https://coderartist06.itch.io/snake), and not only that, you can download the game already compiled for Windows and Linux.
 
 ---
 
@@ -44,8 +44,8 @@ That’s it, you’re ready to explore or modify the game!
 
 ## Credits
 
-- **Developer/Artist:** [Valentin Cristian Ghita (aka CoderArtist06)]
-- **Font:**[The Tiny5 Project, Gissio, Licensed under SIL Open Font License 1.1]
+- **Developer/Artist:** Valentin Cristian Ghita (aka CoderArtist06)
+- **Font:**The Tiny5 Project, Gissio, Licensed under SIL Open Font License 1.1
 - **Engine:** [Godot Engine](https://godotengine.org)  
 - **License:** [GPL-3.0](LICENSE)
 
