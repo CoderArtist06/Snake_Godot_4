@@ -49,7 +49,7 @@ func _ready():
 	 
 	This game defined my childhood. 
 	I spent countless hours playing it 
-	on my mother's legendary Nokia 3310, 
+	on my mother's legendary Nokia 1110, 
 	chasing pixels and breaking my own records. 
 	It was my very first encounter with video games 
 	and left me with one of the most 
